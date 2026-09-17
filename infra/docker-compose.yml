@@ -1,0 +1,12 @@
+services:
+  fde-showcase-api:
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - ../.env.example
+    volumes:
+      - ../app:/srv/app
+      - ../data:/srv/data

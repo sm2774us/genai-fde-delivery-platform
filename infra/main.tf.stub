@@ -1,0 +1,22 @@
+# Terraform stub — illustrative only (rename to main.tf and fill in a backend
+# to use). Shows the resource shape an FDE would provision per cloud target:
+# container hosting, object storage for the RAG corpus, and a secrets store.
+#
+# variable "cloud_provider" { type = string, default = "aws" }
+#
+# module "container_service" {
+#   source   = "./modules/${var.cloud_provider}/container_service"
+#   image    = "fde-showcase-api:latest"
+#   cpu      = 512
+#   memory   = 1024
+# }
+#
+# module "object_storage" {
+#   source = "./modules/${var.cloud_provider}/object_storage"
+#   bucket_name = "fde-showcase-rag-corpus"
+# }
+#
+# module "secrets_store" {
+#   source = "./modules/${var.cloud_provider}/secrets"
+#   secrets = ["LLM_API_KEY"]
+# }

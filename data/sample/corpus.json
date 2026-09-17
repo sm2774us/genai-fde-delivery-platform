@@ -1,0 +1,17 @@
+[
+  {
+    "doc_id": "kb-sso-1",
+    "title": "SSO Migration Runbook",
+    "text": "After the SSO migration on March 2nd, some customers experienced repeated login failures due to stale session tokens cached by legacy clients. The fix is to force a full re-authentication by clearing the session cache and reissuing SAML assertions. Tier-1 support should first confirm the customer's identity provider domain is on the updated allowlist before escalating to tier-2 for a token cache purge."
+  },
+  {
+    "doc_id": "kb-risk-1",
+    "title": "Customer Risk Scoring Policy",
+    "text": "Customer risk scores range from 0 (lowest risk) to 1 (highest risk) and are weighted by account tier: gold customers receive a 0.5x weighting, silver 0.75x, and bronze 1.0x, reflecting historical support burden per tier. Risk scores above 0.7 after weighting require manual review before any credit-limit change is approved."
+  },
+  {
+    "doc_id": "kb-rag-1",
+    "title": "RAG Retrieval Quality Standard",
+    "text": "Production RAG pipelines at this organization must use hybrid retrieval combining BM25 lexical scoring with dense vector similarity, fused via reciprocal rank fusion. Pure vector-only retrieval is prohibited for enterprise knowledge search because it underperforms on exact-match queries such as ticket IDs, error codes, and customer names."
+  }
+]

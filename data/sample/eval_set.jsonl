@@ -1,0 +1,3 @@
+{"id": "eval-1", "query": "Why are customers seeing login failures after the SSO migration?", "expected_keywords": ["session", "tokens", "SAML", "re-authentication"]}
+{"id": "eval-2", "query": "How is customer risk score weighted by tier?", "expected_keywords": ["gold", "silver", "bronze", "weighting"]}
+{"id": "eval-3", "query": "Why must RAG use hybrid retrieval instead of pure vector search?", "expected_keywords": ["BM25", "vector", "reciprocal rank fusion", "exact-match"]}
